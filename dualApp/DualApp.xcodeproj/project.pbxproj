@@ -12,12 +12,16 @@
 		96E3C67B2AA7B065002C53DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E3C6792AA7B065002C53DA /* Main.storyboard */; };
 		96E3C67D2AA7B068002C53DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E3C67C2AA7B068002C53DA /* Assets.xcassets */; };
 		96E3C6802AA7B068002C53DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E3C67E2AA7B068002C53DA /* LaunchScreen.storyboard */; };
-		96E3C6892AA7B0A4002C53DA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3C6872AA7B0A4002C53DA /* HomeViewController.swift */; };
-		96E3C68A2AA7B0A4002C53DA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E3C6882AA7B0A4002C53DA /* HomeViewController.xib */; };
+		96E3C6892AA7B0A4002C53DA /* AppSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3C6872AA7B0A4002C53DA /* AppSelectionViewController.swift */; };
+		96E3C68A2AA7B0A4002C53DA /* AppSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E3C6882AA7B0A4002C53DA /* AppSelectionViewController.xib */; };
 		991A37802AAB4B39002760C0 /* DuoAppBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991A377D2AAB4B39002760C0 /* DuoAppBasicViewController.swift */; };
 		991A37812AAB4B39002760C0 /* TestBrowserControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991A377E2AAB4B39002760C0 /* TestBrowserControllerViewController.swift */; };
 		991A37822AAB4B39002760C0 /* TestBrowserControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 991A377F2AAB4B39002760C0 /* TestBrowserControllerViewController.xib */; };
 		991A37852AAB4B77002760C0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991A37832AAB4B77002760C0 /* MainViewController.swift */; };
+		991A37912AAB624B002760C0 /* NotesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 991A378D2AAB624B002760C0 /* NotesViewController.storyboard */; };
+		991A37922AAB624B002760C0 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991A378E2AAB624B002760C0 /* WebViewController.swift */; };
+		991A37932AAB624B002760C0 /* WebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 991A378F2AAB624B002760C0 /* WebViewController.storyboard */; };
+		991A37942AAB624B002760C0 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991A37902AAB624B002760C0 /* NotesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,12 +32,16 @@
 		96E3C67C2AA7B068002C53DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96E3C67F2AA7B068002C53DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96E3C6812AA7B068002C53DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96E3C6872AA7B0A4002C53DA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		96E3C6882AA7B0A4002C53DA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		96E3C6872AA7B0A4002C53DA /* AppSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSelectionViewController.swift; sourceTree = "<group>"; };
+		96E3C6882AA7B0A4002C53DA /* AppSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppSelectionViewController.xib; sourceTree = "<group>"; };
 		991A377D2AAB4B39002760C0 /* DuoAppBasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuoAppBasicViewController.swift; sourceTree = "<group>"; };
 		991A377E2AAB4B39002760C0 /* TestBrowserControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBrowserControllerViewController.swift; sourceTree = "<group>"; };
 		991A377F2AAB4B39002760C0 /* TestBrowserControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestBrowserControllerViewController.xib; sourceTree = "<group>"; };
 		991A37832AAB4B77002760C0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		991A378D2AAB624B002760C0 /* NotesViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotesViewController.storyboard; sourceTree = "<group>"; };
+		991A378E2AAB624B002760C0 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		991A378F2AAB624B002760C0 /* WebViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebViewController.storyboard; sourceTree = "<group>"; };
+		991A37902AAB624B002760C0 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +81,6 @@
 				96E3C67C2AA7B068002C53DA /* Assets.xcassets */,
 				96E3C67E2AA7B068002C53DA /* LaunchScreen.storyboard */,
 				96E3C6812AA7B068002C53DA /* Info.plist */,
-				96E3C6872AA7B0A4002C53DA /* HomeViewController.swift */,
-				96E3C6882AA7B0A4002C53DA /* HomeViewController.xib */,
 			);
 			path = DualApp;
 			sourceTree = "<group>";
@@ -82,10 +88,10 @@
 		991A377C2AAB4B14002760C0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				991A378C2AAB6233002760C0 /* Duo Apps */,
+				991A378B2AAB5888002760C0 /* App Selection */,
+				991A378A2AAB583D002760C0 /* Dual Essentials */,
 				991A37872AAB4B7F002760C0 /* Main controller */,
-				991A377D2AAB4B39002760C0 /* DuoAppBasicViewController.swift */,
-				991A377E2AAB4B39002760C0 /* TestBrowserControllerViewController.swift */,
-				991A377F2AAB4B39002760C0 /* TestBrowserControllerViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -96,6 +102,36 @@
 				991A37832AAB4B77002760C0 /* MainViewController.swift */,
 			);
 			path = "Main controller";
+			sourceTree = "<group>";
+		};
+		991A378A2AAB583D002760C0 /* Dual Essentials */ = {
+			isa = PBXGroup;
+			children = (
+				991A377D2AAB4B39002760C0 /* DuoAppBasicViewController.swift */,
+				991A377E2AAB4B39002760C0 /* TestBrowserControllerViewController.swift */,
+				991A377F2AAB4B39002760C0 /* TestBrowserControllerViewController.xib */,
+			);
+			path = "Dual Essentials";
+			sourceTree = "<group>";
+		};
+		991A378B2AAB5888002760C0 /* App Selection */ = {
+			isa = PBXGroup;
+			children = (
+				96E3C6872AA7B0A4002C53DA /* AppSelectionViewController.swift */,
+				96E3C6882AA7B0A4002C53DA /* AppSelectionViewController.xib */,
+			);
+			path = "App Selection";
+			sourceTree = "<group>";
+		};
+		991A378C2AAB6233002760C0 /* Duo Apps */ = {
+			isa = PBXGroup;
+			children = (
+				991A378E2AAB624B002760C0 /* WebViewController.swift */,
+				991A378F2AAB624B002760C0 /* WebViewController.storyboard */,
+				991A37902AAB624B002760C0 /* NotesViewController.swift */,
+				991A378D2AAB624B002760C0 /* NotesViewController.storyboard */,
+			);
+			path = "Duo Apps";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +195,10 @@
 				96E3C6802AA7B068002C53DA /* LaunchScreen.storyboard in Resources */,
 				991A37822AAB4B39002760C0 /* TestBrowserControllerViewController.xib in Resources */,
 				96E3C67D2AA7B068002C53DA /* Assets.xcassets in Resources */,
+				991A37912AAB624B002760C0 /* NotesViewController.storyboard in Resources */,
 				96E3C67B2AA7B065002C53DA /* Main.storyboard in Resources */,
-				96E3C68A2AA7B0A4002C53DA /* HomeViewController.xib in Resources */,
+				991A37932AAB624B002760C0 /* WebViewController.storyboard in Resources */,
+				96E3C68A2AA7B0A4002C53DA /* AppSelectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +213,9 @@
 				96E3C6742AA7B065002C53DA /* AppDelegate.swift in Sources */,
 				96E3C6762AA7B065002C53DA /* SceneDelegate.swift in Sources */,
 				991A37852AAB4B77002760C0 /* MainViewController.swift in Sources */,
-				96E3C6892AA7B0A4002C53DA /* HomeViewController.swift in Sources */,
+				991A37942AAB624B002760C0 /* NotesViewController.swift in Sources */,
+				991A37922AAB624B002760C0 /* WebViewController.swift in Sources */,
+				96E3C6892AA7B0A4002C53DA /* AppSelectionViewController.swift in Sources */,
 				991A37812AAB4B39002760C0 /* TestBrowserControllerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

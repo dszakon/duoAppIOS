@@ -9,14 +9,22 @@ import UIKit
 
 class AppSelectionViewController: UIViewController {
     
-    let applicationList = ["Camera" , "Phone", "Messages" , "Browser", "YouTube", "Weather"]
+    let applicationList = ["Notes", "Camera" , "Phone", "Messages" , "Browser", "YouTube", "Weather", "Health App", "Linkedin"]
 
+    var applicationSelectionCompletion: ((String) -> Void)?
+    
     @IBOutlet weak var applicationListTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         applicationListTableView.register(UITableViewCell.self, forCellReuseIdentifier: "DefaultCellIdentifier")
         applicationListTableView.reloadData()
+    }
+    
+    static func instanceController(completion: ((String) -> Void)?) -> AppSelectionViewController {
+        let controller = AppSelectionViewController(nibName: "AppSelectionViewController", bundle: nil)
+        controller.applicationSelectionCompletion = completion
+        return controller
     }
 }
 
@@ -35,5 +43,10 @@ extension AppSelectionViewController: UITableViewDelegate, UITableViewDataSource
 
         cell.textLabel?.text = applicationList[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let appSelected = applicationList[indexPath.row]
+        applicationSelectionCompletion?(appSelected)
     }
 }

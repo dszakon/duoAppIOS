@@ -14,13 +14,15 @@ import UIKit
 
 class DuoAppBasicViewController: UIViewController, DuoAppBasicFunctions {
     
+    var closeCompletionHandler: (() -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         createCloseButton()
     }
     
     @objc func closeController() {
-        
+        closeCompletionHandler?()
     }
     
     func createCloseButton() {
@@ -28,10 +30,14 @@ class DuoAppBasicViewController: UIViewController, DuoAppBasicFunctions {
         closeButton.setImage(UIImage(systemName: "x.circle"), for: .normal)
         closeButton.addTarget(self, action: #selector(closeController), for: .touchUpInside)
         closeButton.translatesAutoresizingMaskIntoConstraints = false
+        closeButton.backgroundColor = .white
+        closeButton.layer.shadowColor = UIColor.gray.cgColor
+        closeButton.layer.shadowRadius = 1.0
+        closeButton.layer.masksToBounds = false
         self.view.addSubview(closeButton)
         
-        closeButton.heightAnchor.constraint(equalToConstant: 24.0).isActive = true
-        closeButton.widthAnchor.constraint(equalToConstant: 24.0).isActive = true
+        closeButton.heightAnchor.constraint(equalToConstant: 34.0).isActive = true
+        closeButton.widthAnchor.constraint(equalToConstant: 34.0).isActive = true
         closeButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 8).isActive = true
         closeButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8).isActive = true
     }

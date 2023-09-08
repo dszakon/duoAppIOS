@@ -17,12 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TO5-mw-YOb">
-                                <rect key="frame" x="16" y="75" width="361" height="355.66666666666663"/>
+                                <rect key="frame" x="16" y="75" width="361" height="358.33333333333331"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahI-MG-8X7">
-                                <rect key="frame" x="16" y="446.66666666666674" width="361" height="355.33333333333326"/>
+                                <rect key="frame" x="16" y="444" width="361" height="358"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mfu-wm-Pfc">
+                                <rect key="frame" x="0.0" y="433.33333333333331" width="393" height="10"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="Fvi-qI-35K"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -31,11 +38,14 @@
                             <constraint firstItem="TO5-mw-YOb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="1hC-pe-umB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ahI-MG-8X7" secondAttribute="trailing" constant="16" id="7cb-bP-CrV"/>
                             <constraint firstItem="ahI-MG-8X7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="HGe-Yv-56t"/>
+                            <constraint firstItem="Mfu-wm-Pfc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JKe-Nt-0PD"/>
                             <constraint firstItem="ahI-MG-8X7" firstAttribute="height" secondItem="TO5-mw-YOb" secondAttribute="height" id="OJJ-3C-8mD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ahI-MG-8X7" secondAttribute="bottom" constant="16" id="Wqi-Vc-6Ve"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TO5-mw-YOb" secondAttribute="trailing" constant="16" id="ZtI-El-we4"/>
                             <constraint firstItem="TO5-mw-YOb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bWL-Xd-Igu"/>
-                            <constraint firstItem="ahI-MG-8X7" firstAttribute="top" secondItem="TO5-mw-YOb" secondAttribute="bottom" constant="16" id="i5k-2Y-n2H"/>
+                            <constraint firstItem="Mfu-wm-Pfc" firstAttribute="top" secondItem="TO5-mw-YOb" secondAttribute="bottom" id="g0G-8b-CCn"/>
+                            <constraint firstItem="ahI-MG-8X7" firstAttribute="top" secondItem="Mfu-wm-Pfc" secondAttribute="bottom" constant="0.66666666666674246" id="iud-kT-e16"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mfu-wm-Pfc" secondAttribute="trailing" id="qFS-WG-mVP"/>
                         </constraints>
                     </view>
                     <connections>
@@ -45,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="-2"/>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
