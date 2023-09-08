@@ -8,10 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="DualApp" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppSelectionViewController" customModule="DualApp" customModuleProvider="target">
             <connections>
-                <outlet property="firstTableView" destination="wWb-4I-w2i" id="3Ds-kb-GNB"/>
-                <outlet property="secondFirstView" destination="dUb-7y-Vkz" id="27v-GE-5Oi"/>
+                <outlet property="applicationListTableView" destination="wWb-4I-w2i" id="3Ds-kb-GNB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,37 +19,22 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fkF-44-pSm">
-                    <rect key="frame" x="0.0" y="59" width="393" height="793"/>
-                    <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4aF-y4-8xq">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="396.66666666666669"/>
-                            <subviews>
-                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wWb-4I-w2i">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="396.66666666666669"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                </tableView>
-                            </subviews>
-                        </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ODj-Uw-q23">
-                            <rect key="frame" x="0.0" y="396.66666666666674" width="393" height="396.33333333333326"/>
-                            <subviews>
-                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dUb-7y-Vkz">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="396.33333333333331"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                </tableView>
-                            </subviews>
-                        </stackView>
-                    </subviews>
-                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wWb-4I-w2i">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="l3c-AY-oZl"/>
+                        <outlet property="delegate" destination="-1" id="zx3-iI-FzV"/>
+                    </connections>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="fkF-44-pSm" secondAttribute="bottom" id="3NC-hC-GzE"/>
-                <constraint firstItem="fkF-44-pSm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KVO-oU-iKO"/>
-                <constraint firstAttribute="trailing" secondItem="fkF-44-pSm" secondAttribute="trailing" id="cIn-Iz-ZCA"/>
-                <constraint firstItem="fkF-44-pSm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="i8l-UF-knt"/>
+                <constraint firstItem="wWb-4I-w2i" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4cP-fJ-Drn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wWb-4I-w2i" secondAttribute="bottom" id="GVH-Ye-QWo"/>
+                <constraint firstItem="wWb-4I-w2i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WLf-It-vGZ"/>
+                <constraint firstItem="wWb-4I-w2i" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="euq-ez-GFJ"/>
             </constraints>
             <point key="canvasLocation" x="0.76335877862595414" y="19.718309859154932"/>
         </view>
